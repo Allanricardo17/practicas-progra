@@ -1,0 +1,67 @@
+#Ejercicio 1 realizar una base de datos en la cual se puedan agregar datos
+
+informacion = [["Allan", 20, 118710925, "H"], ["Sofia", 18, 118732073, "M"]]
+
+print(informacion)
+
+nombre = str(input("Digite su nombre"))
+edad = str(input("Digite su edad"))
+cedula = str(input("Digite su cedula"))
+sexo = str(input("Digite su sexo"))
+
+informacion += [[nombre, edad, cedula, sexo]]
+
+print(informacion)
+
+# Ejercicio 2
+c = 0
+suma = 0
+calificaciones = [[70, 80, 60, 90],
+                  [100, 90, 85, 96],
+                  [65, 70, 50, 60],
+                  [80, 90, 78, 100],
+                  [10, 100, 90, 67]]
+print(calificaciones)
+
+x = int(input("Decida el estudiante del 1 al 5, al cual se le requiere cambiar la nota"))
+y = int(input("Decida del 1 al 4 la nota que desea cambiar"))
+x -= 1
+y -= 1
+z = int(input("Cambie su nota:"))
+if z >= 1:
+    calificaciones [x][y] = z
+for fila in calificaciones:
+    c += 1    
+    if fila != -1:
+        
+        suma = fila[0] + fila[1] + fila[2] + fila[3]
+        promedio = suma / 4
+    print("El promedio de su estudiante #", c, " es:")
+    print(promedio)
+
+#Ejericio 3
+
+def seleccionar():
+    global bus
+    global nuevo_bus
+    
+    selec = int(input("Seleccione la linea(horizontal) que desea ocupar del 1 al 4"))
+    asi = int(input("Seleccione el asiento de su linea, del 1 al 5"))
+    asi -= 1
+    selec -= 1
+    bus[asi][selec] = 1
+    nuevo_bus = bus
+
+    print(nuevo_bus)
+    
+bus = [[0,0,0,0,0],
+       [0,0,0,0,0],
+       [0,0,0,0,0],
+       [0,0,0,0,0],]
+ejemplo = [[0,0,0,0,0]]
+nuevo_bus = []
+for fila in bus:
+    print(ejemplo)
+
+print("Ahora elige tu asiento:")
+seleccionar()
