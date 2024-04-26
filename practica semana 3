@@ -1,0 +1,46 @@
+nom=str(input("Digite su nombre: "))
+ap=str(input("Digite su apellido: "))
+ap2=str(input("Digite su segundo apellido: "))
+
+print("Bienvenido:", nom, ap, ap2)
+
+
+#Ejercicio 2
+
+num = int(input("digite el primer numero"))
+num2 = int(input("digite el segundo numero"))
+
+suma = num+num2
+res = num-num2
+div = num/num2
+mult = num*num2
+
+print("Suma :", suma, "resta:", res, "Division:", div, "multiplicacion:", mult)
+
+#Ejecicio 3
+
+lado = float(input("Digite el valor de un lado del cuadrado:"))
+area = lado * lado
+perimetro = lado + lado + lado + lado
+
+print ("Estos son los datos solicitados de su cuadrado:", "Area:", area, "Perimetro:", perimetro)
+
+#Ejecicio 4
+
+pedro = int(input("Edad de pedro: "))
+print("Edad pedro =", pedro)
+Luis = int(input("Edad de Luis:"))
+print("Edad Luis=", Luis)
+x = pedro
+pedro = Luis
+Luis = x
+print("Edad de pedro:", pedro)
+print("Edad Luis=", Luis)
+
+#Ejercicio 5
+
+pot = int(input("Numero que desea elevar a una potencia"))
+pote = int(input("Potencia a la cual desea elevar el numero:"))
+
+potencia = pot ** pote
+print("resultado:", potencia)
