@@ -1,0 +1,47 @@
+def binario(numero):
+    return format(numero, 'b')
+
+def octal(numero):
+    resultado = ""
+    while numero > 0:
+        resultado = str(numero % 8) + resultado
+        numero //= 8
+    return resultado
+
+def hexadecimal(numero):
+    digitos = "0123456789ABCDEF"
+    resultado = ""
+    while numero > 0:
+        resultado = digitos[numero % 16] + resultado
+        numero //= 16
+    return resultado
+
+def convertir_base(numero, base):
+    if base == 2:
+        return binario(numero)
+    elif base == 8:
+        return octal(numero)
+    elif base == 16:
+        return hexadecimal(numero)
+    else:
+        return "Base no soportada"
+
+
+if __name__ == "__main__":
+    numero = int(input("Ingrese un número entero: "))
+
+
+    resultado_binario = binario(numero)
+    print(f"El número", numero, "en binario es:", resultado_binario)
+
+
+    resultado_octal = octal(numero)
+    print(f"El número", numero, "en octal es:", resultado_octal)
+
+
+    resultado_hexadecimal = hexadecimal(numero)
+    print(f"El número", numero, "en hexadecimal es:", resultado_hexadecimal)
+
+
+    base = int(input("Ingrese la base a la que quiere convertir el número (2, 8 o 16): "))
+    print(f"El número", numero, " en base", base, "es:", convertir_base(numero, base))
