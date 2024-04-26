@@ -1,0 +1,54 @@
+kil = []
+dia = ["Lunes", "Martes","Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+for i in range (7):
+    kilo = int(input("Kilometros recorridos en este día"))
+    kil = kil + [kilo]
+
+
+print("Total de kil por dia:", dia[0], kil[0], dia[1], kil[1], dia[2], kil[2], dia[3], kil[3], dia[4], kil[4], dia[5], kil[5], dia[6], kil[6])
+
+
+
+per = []
+count = -1
+car = 0
+for i in range(10):
+    bt = str(input("\n Digite su nombre, más tarde se le asignara butaca: \n"))
+    per = per + [bt]
+    count = count + 1
+    car = car + 1
+    print("Esta es su butaca", per[count], car)
+
+
+pal = int(input("Cuantas palabras desea imprimir al revés?:"))
+pele = []
+co = -1
+for i in range(pal):
+    pel = str(input("Digite la palabra que desea imprimir al revés"))
+    pele = pele + [pel]
+    co = co + 1
+    print(pele[co][::-1])
+
+men = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+c = 0
+mantos = ""
+cant = []
+c2 = -1
+for i in range(0, len(men)):
+    montos = float(input("Digite la cantidad de dinero registrada el día de hoy"))
+    if mantos == "":
+        mantos = montos
+    elif mantos>montos:
+        mantos = montos
+    cant = cant + [montos]
+    c2 = c2+1
+    
+    print("Estos fueron los resultados :", men[c2], cant[c2])
+
+for i in range(len(cant)):
+    if mantos == cant[c]:
+        break
+    c = c+1
+    
+
+print(mantos, men[c], "Fue la cantidad que menos registro dinero")
