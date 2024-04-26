@@ -1,0 +1,38 @@
+notas =[]
+
+def crearArchivo():
+    file=open("datosCurso.txt","w")
+    print("El archivo está listo para grabar la informacion que quieras!!!")
+    file.close()
+
+def agregarInformacion():
+    global notas
+    file=open("datosCurso.txt","a")
+    file.write(notas)
+    file.write("\n")
+    print("\nLa infomación fue grabada correctamente")
+    file.close()
+
+def mostrarInformacion():
+    file=open("datosCurso.txt","r")
+    mensaje=file.read()
+    print(mensaje)
+    file.close()
+
+crearArchivo()
+while True:
+    des = int(input("Que desea hacer? 1) agregar informacion o 2) mostrar informacion."))
+
+    if des == 1:
+        nombre = str(input("Nombre del estudiante:"))
+        grupo = int(input("Grupo"))
+        calificacion = float(input("Calificaion:"))
+        notas += [[nombre, grupo, calificacion]]
+        agregarInformacion()
+        mostrarInformacion()
+    elif des == 2:
+        print(notas)
+        mostrarInformacion()
+    else:
+        print()
+        print("Eso no pertenece a las opciones brindadas")
