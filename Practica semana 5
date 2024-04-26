@@ -1,0 +1,19 @@
+for i in range(20, 41):
+    if i % 2 == 0:
+        print(i)
+#Ejecicio 2
+
+est = int(input("Ingrese la cantidad de estudiantes:"))
+
+for i in est:
+    nota = float(input("Digite la nota de este estudiante"))
+    if nota >= 70:
+        print()
+        print("APROBADO")
+    else:
+        print()
+        print("REPROBADO")
+
+
+        
+    
