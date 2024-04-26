@@ -1,0 +1,86 @@
+#Ejericico 1
+
+A = int(input("Digite el entero"))
+B = int(input("Digite el entero"))
+C = int(input("Digite el entero"))
+D = int(input("Digite el entero"))
+
+print(D, C, B, A)
+
+#Ejercicio 2
+
+edad = int(input("Digite su edad"))
+
+edad = edad + 5
+
+print ("Dentro de 5 años, tendrá:", edad)
+
+#Ejercicio 3
+
+A = int(input("Digite el dato entero de A:"))
+B = int(input("Digite el dato entero de B:"))
+
+C = A+B
+D = C ** 2
+m = D / 3
+
+print (m)
+
+
+#Ejericio 4
+
+num = float(input("Digite su numero que será calculado al cuadrado y al cubo:"))
+
+cuad = num ** 2
+cub = num ** 3
+
+print("Su numero al cuadrado =", cuad, "Su numero al cubo =", cub)
+
+#Ejercicio 5
+
+b = float(input("Digite la base del rectangulo:"))
+h = float(input("Digite la altura del rectangulo:"))
+
+area = b * h
+per = b + h
+peri = per * 2
+
+print("Area=", area, "Perimetro =", peri)
+
+#Ejercicio 6
+
+dist = float(input("distancia de su casa a su universidad?(en kilimetros):"))
+dist = dist*2
+kil = float(input("costo por kilometro?:"))
+kil = kil*2
+uni = float(input("cantidad de dias que va a la universidad por semana:"))
+uni = uni*2
+
+total = kil+dist+uni
+total = total * 15
+print("Costo total por trasladarse por cuatrimestre:", total)
+
+#Ejercicio 7
+per1 = int(input("Edad de la 1ra persona"))
+per2 = int(input("Edad de la 2da persona"))
+per3 = int(input("Edad de la 3ra persona"))
+per4 = int(input("Edad de la 54ta persona"))
+per5 = int(input("Edad de la 5ta persona"))
+
+too = per1+per2+per3+per4+per5
+tota = too/5
+print("Edad promedio = ", tota)
+
+#Ejercicio 8
+
+hor = int(input("Horas trabajadas semanalmente: "))
+pe = int(input("Precio que se paga por hora: "))
+salarioo = hor * pe
+salariom = salarioo * 4.2
+print("Salario mensual: ", salariom)
+
+#Ejercicio 9
+i = float(input("Ingresos mensuales: "))
+g = float(input("Gastos mensuales: "))
+por = g/i * 100
+print("Porcentaje gastado en aliemntos = ", por)
